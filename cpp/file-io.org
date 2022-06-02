@@ -1,0 +1,76 @@
+#+TITLE: File Io
+
+* Contents :toc:
+- [[#unorganized][Unorganized]]
+
+* Unorganized
+
+#+begin_src C++
+std::cin.ignore(); // ingore the next char
+std::cin.ignore(int num); // ignore the next num char(s)
+std::cin.peek(); // get the value of the next char without pulling from stream
+std::cin.unget(); // put the last char back in the stream
+std::cin.putback(char c); // put any char on the stream
+#+end_src
+
+Flags turned on may be preceded by other on flags
+
+#+begin_src C++
+// using flags
+std::cout.setf($flag | $another_flag); // turn on a flag
+std::cout.unsetf($flag); // turn off a flag
+std::cout.setf($flag, $flag_group) // ensure only flag in flaggroup is on
+
+// flags
+std::ios::boolalpha // true ? prints true/false : 0/1
+std::ios::showpos // display +
+std::ios::uppercase // use all CAPS
+// std::ios::basefield group
+std::ios::dec // print in decimal (default)
+std::ios::hex // print in hexidecimal
+std::ios::oct // print in octal
+// no flag prints according to leading character
+// std::ios::floatfield group
+std::ios::fixed // use decimal notation
+std::ios::scientific // use scientific notation
+std::ios::showpoint // always show decimal (and trailing 0s)
+// std::ios::adjustfield group
+std::ios::internal // left-justified sign, right-justified value
+std::ios::left // left-justified
+std::ios::right // right-justified
+
+// manipulators (<<)
+std::boolalpha // print t/f as true/false
+std::noboolalpha // print t/f as 0/1
+
+std::showpos // display +
+std::noshowpos // don't display +
+
+std::uppercase // use all CAPS
+std::nouppercase // no CAPS
+
+std::dec // print in decimal (default)
+std::hex // print in hexidecimal
+std::oct // print in octal
+
+std::fixed // use decimal notation
+std::scientific // use scientific notation
+std::showpoint // always show decimal (and trailing 0s)
+std::noshowpoint // dont show decimal point
+std::setprecision(int) // set floating point precesion
+
+std::internal // left-justified sign, right-justified value
+std::left // left-justified
+std::right // right-justified
+std::setfill(char) // set the character to be used in place of 'whitespace'
+std::setw(int) // set the width for input and output field
+
+// member functions
+std::precision() // returns the current precision
+std::precision(int) // set precision, returns the old precision
+
+std::fill() // returns the current fill
+std::fill(int) // sets fill, returns old
+std::width() // returns the current field width
+std::width(int) // sets field width, returns old
+#+end_src

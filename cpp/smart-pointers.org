@@ -1,0 +1,22 @@
+#+TITLE: Smart Pointers
+
+* Contents :toc:
+- [[#unorganized][Unorganized]]
+
+* Unorganized
+
+//
+#include <memory>
+
+//
+std::shared_ptr<>
+//
+std::unique_ptr<>
+//
+std::weak_ptr<>
+
+//
+std::make_unique<>
+
+//
+std::make_shared<>

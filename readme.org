@@ -6,6 +6,8 @@
 - [[#org-mode][Org-Mode]]
 
 * Cpp
+- [[./cpp/readme.org][General]]
+- [[./cpp/file-io.org][File IO]]
 * JavaScript
 - [[./js/readme.org][General]]
 - [[./js/type-coercion.org][Type Coercion]]
