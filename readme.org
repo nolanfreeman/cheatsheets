@@ -10,4 +10,4 @@
 - [[./js/readme.org][General]]
 - [[./js/type-coercion.org][Type Coercion]]
 * Org-Mode
-- General
+- [[./org-mode/readme.org][General]]
