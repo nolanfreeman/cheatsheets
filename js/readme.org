@@ -1,1 +1,74 @@
 #+TITLE: General JavaScript
+
+* Contents :toc:
+- [[#numbers][Numbers]]
+- [[#strings][Strings]]
+- [[#booleans][Booleans]]
+- [[#empty-value][Empty Value]]
+- [[#operators][Operators]]
+- [[#quirks][Quirks]]
+- [[#type-coercion][Type Coercion]]
+
+* Numbers
+
+- In Memory
+  + Number of possible values:
+    $2^{64}$ (~18 Quintillion)
+  + Number of possible Whole Numbers:
+    $2^53$ (~9 Quintillion)
+
+- Special Number Types
+  + Infinity
+    =Infinity=
+  + Negative Infinity
+    =-Infinity=
+  + Not a Number
+    =NaN=
+
+* Strings
+
+- Template Literals
+  =`my name is ${name}`=
+- Quoted Strings
+  ="some string"= or ='another string'=
+
+* Booleans
+
+- =true=
+- =false=
+
+* Empty Value
+
+- =null=
+- =undefined=
+
+* Operators
+
+- Logical OR
+  =||=
+- Logical AND
+  =&&=
+- Ternary
+  =condition ? if-true : if-false=
+- Short Circuit if-false
+  =if-false || return this=
+  =if-true || not evaluated=
+- Short Circuit if-true
+  =if-true && return this=
+  =if-false && not evaluated=
+
+* Quirks
+
+=Infinity - 1= = =Infinity=
+=NaN= == =NaN= = =false=
+=null == undefined= = =true=
+=null == 0= = =false=
+=undefined == 0= = =false=
+
+* Type Coercion
+
+=6 * null= = =0=
+="4" - 1= = =3=
+="3" + 1= = =31=
+="seven" * 2= = =NaN=
+=false == 0= = =true=
