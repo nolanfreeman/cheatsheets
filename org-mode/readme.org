@@ -44,12 +44,12 @@
     =#+ATTR_HTML: :width 500px=
   + When exporting to LaTeX:
     =#+ATTR_LATEX: :width 500px=
-  + Either work in buffer
+  + (Either work in buffer)
 
 * Agenda
 
 - Habit Progress Indicators
-  + Blue:       Not done yet on day.
-  + Green:      Could have been done on day.
-  + Yellow:     Will be overdue next day.
-  + Red:        Overdue on next day.
+  + Blue:       =Not done yet on day.=
+  + Green:      =Could have been done on day.=
+  + Yellow:     =Will be overdue next day.=
+  + Red:        =Overdue on next day.=
