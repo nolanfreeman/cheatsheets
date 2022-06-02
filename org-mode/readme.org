@@ -1,1 +1,55 @@
 #+TITLE: General Org-Mode
+
+* Contents :toc:
+- [[#marking-up-text][Marking Up Text]]
+- [[#using-latex][Using LaTeX]]
+- [[#working-with-images][Working With Images]]
+- [[#agenda][Agenda]]
+
+* Marking Up Text
+
+- =Inline Code=
+- ~Verbatim~
+- +Strikethrough+
+- *Bold*
+- /Italics/
+- _Underlined_
+- <<this thing too>>
+
+* Using LaTeX
+
+- Previewing LaTeX Fragments
+  + Auto:
+    =#+STARTUP: latexpreview=
+  + Disable:
+    =#+STARTUP: nolatexpreview=
+  + Manually toggle:
+    =C-c C-x C-l=
+    =M-x org-latex-preview=
+
+- Inline syntax:
+  =$\frac{3\pi}{4}$= produces $\frac{3\pi}{4}$.
+
+* Working With Images
+
+- Previewing Images
+  + Auto:
+    =#+STARTUP: inlineimages=
+  + Manually:
+    =C-c C-x C-v=
+    =M-x org-toggle-inline-images=
+
+- Sizing images
+  + When exporting to HTML:
+    =#+ATTR_HTML: :width 500px=
+  + When exporting to LaTeX:
+    =#+ATTR_LATEX: :width 500px=
+  + Either work in buffer
+
+* Agenda
+
+- Habit Progress Indicators
+  + Blue:       Not done yet on day.
+  + Green:      Could have been done on day.
+  + Yellow:     Will be overdue next day.
+  + Red:        Overdue on next day.
